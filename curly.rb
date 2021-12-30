@@ -5,21 +5,21 @@
 class Curly < Formula
   desc "curly tool"
   homepage "https://github.com/bilal-bhatti/curly"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.2/curly_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "6c47f46baf035adff9e9873ab689c93cf43898ac295859d6bfcc79eaee5be261"
+    if Hardware::CPU.intel?
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.3/curly_0.0.3_Darwin_x86_64.tar.gz"
+      sha256 "1f2aa5c46b584abfb9ed57bb231104600b53b82252c5817c93f793674762c66e"
 
       def install
         bin.install "curly"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.2/curly_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "b7e69b52f4319341efc9e6629a7f0051ca4415f655c1055a6e1beb9515f9fa5a"
+    if Hardware::CPU.arm?
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.3/curly_0.0.3_Darwin_arm64.tar.gz"
+      sha256 "b4b0c115c1ccf9ea56fecf334a98e8961a205aa32d5442e4142ccd13e57c5961"
 
       def install
         bin.install "curly"
@@ -29,16 +29,16 @@ class Curly < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.2/curly_0.0.2_Linux_arm64.tar.gz"
-      sha256 "552125685ed5665622db1c182da862a008edc5d4027e4aea4501994916e30401"
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.3/curly_0.0.3_Linux_arm64.tar.gz"
+      sha256 "ec6e46b14342549e3ed464294b9270d1d12f62a98240d204545aa4af0e252ee0"
 
       def install
         bin.install "curly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.2/curly_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "27612e0021ec06bc8998fb205f161db9492f7503174697569b0aee474bf5509f"
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.3/curly_0.0.3_Linux_x86_64.tar.gz"
+      sha256 "ecee4771ec43082ba5e3f4724897008e1249163deef78e9738bf20dee11559ea"
 
       def install
         bin.install "curly"
