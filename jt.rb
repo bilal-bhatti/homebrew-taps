@@ -5,20 +5,20 @@
 class Jt < Formula
   desc ""
   homepage ""
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.5/jt_0.1.5_Darwin_arm64.tar.gz"
-      sha256 "5a72aa9e72eb463e2d7213bb02f1d2c8a9f9bd970c8a1cefeccaa1b2ffc5f8e7"
+      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.6/jt_0.1.6_Darwin_arm64.tar.gz"
+      sha256 "e79c151349f8f2c29a24ac32a65965d9eeddd82a21b9ac95b1a4edf25f7cf9e9"
 
       def install
         bin.install "jt"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.5/jt_0.1.5_Darwin_x86_64.tar.gz"
-      sha256 "53b0cd98a50385eda51e38046e42511dab2a7bef5baad017985bb4be91f9205c"
+      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.6/jt_0.1.6_Darwin_x86_64.tar.gz"
+      sha256 "db7486a3755994c98676de7b7b81656037ab9972a77106598cad63dca71e45bc"
 
       def install
         bin.install "jt"
@@ -28,16 +28,16 @@ class Jt < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.5/jt_0.1.5_Linux_arm64.tar.gz"
-      sha256 "f8f35fb7dbb35a93ab851af93cb5b0d1f0e48d02adbc49dd95788beee880046e"
+      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.6/jt_0.1.6_Linux_arm64.tar.gz"
+      sha256 "2bd6c73a6cf2de2b5a49afb3e825d182f91366185777361bf7a934b93337abe3"
 
       def install
         bin.install "jt"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.5/jt_0.1.5_Linux_x86_64.tar.gz"
-      sha256 "6af6d4ab2d926db78492e759b385572fbf8f316fb7c3686c71da5e72d56daf30"
+      url "https://github.com/bilal-bhatti/jt/releases/download/v0.1.6/jt_0.1.6_Linux_x86_64.tar.gz"
+      sha256 "d4cf57deba951815048307775d3ff99154585c8c4f0b55a2c45232d3e3a29884"
 
       def install
         bin.install "jt"
