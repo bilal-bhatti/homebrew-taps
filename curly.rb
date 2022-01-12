@@ -5,21 +5,21 @@
 class Curly < Formula
   desc "curly tool"
   homepage "https://github.com/bilal-bhatti/curly"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.7/curly_0.0.7_Darwin_arm64.tar.gz"
-      sha256 "6a80747eafbf92951ed8ae933c5bb488b60b459608fe862245dcca5c2dfc5003"
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.8/curly_0.0.8_Darwin_arm64.tar.gz"
+      sha256 "572218cc83961846cea12a45f45f929b062a328c374ab1af18701b87d21eaf6d"
 
       def install
         bin.install "curly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.7/curly_0.0.7_Darwin_x86_64.tar.gz"
-      sha256 "bf70c92d0dc5157bf6297372bbfcc4c4821505538438b836a53f0d55380ca6c9"
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.8/curly_0.0.8_Darwin_x86_64.tar.gz"
+      sha256 "ec30d3067e6ca22e1991d54ad4eafaac80086e0015e5221bfc75cc9664226341"
 
       def install
         bin.install "curly"
@@ -29,16 +29,16 @@ class Curly < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.7/curly_0.0.7_Linux_arm64.tar.gz"
-      sha256 "f21a16a551877a216e4bb55a05b0774ebf0c4178810487be50314884a5019992"
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.8/curly_0.0.8_Linux_arm64.tar.gz"
+      sha256 "b5e87ace62b28febfd2062fc5ac276b3dd86a78b4bf0a7e28cb0fc7d08443270"
 
       def install
         bin.install "curly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.7/curly_0.0.7_Linux_x86_64.tar.gz"
-      sha256 "4f332dc001c83108c5f0e81644ce0190d3503946c353dc5333cb9bf9e621c8ab"
+      url "https://github.com/bilal-bhatti/curly/releases/download/v0.0.8/curly_0.0.8_Linux_x86_64.tar.gz"
+      sha256 "91a9c3834672c1b5571ba3021e75e31d1fc382f382b6444e5d1fb4df1d92b47b"
 
       def install
         bin.install "curly"
