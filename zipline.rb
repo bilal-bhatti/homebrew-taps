@@ -5,20 +5,20 @@
 class Zipline < Formula
   desc ""
   homepage ""
-  version "0.3.4"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.3.4/zipline_0.3.4_Darwin_arm64.tar.gz"
-      sha256 "2c2596da32af652b0c4452e00d646127723056a1b9eaba5631044138ac051ac2"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.0/zipline_Darwin_arm64.tar.gz"
+      sha256 "e91ec064ffb6eb1166b880be58c58a4bbb4d52cba570f7c9698643620944515a"
 
       def install
         bin.install "zipline"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.3.4/zipline_0.3.4_Darwin_x86_64.tar.gz"
-      sha256 "61568cc23facd9d5efe5307568a6e72cbbfff20f414b1f8dc8a822d528416c08"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.0/zipline_Darwin_x86_64.tar.gz"
+      sha256 "cc2a99fa3ea7093d111113195e4e4121cdcf85efa2098d5a411ff7bcd3796ecc"
 
       def install
         bin.install "zipline"
@@ -28,16 +28,16 @@ class Zipline < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.3.4/zipline_0.3.4_Linux_arm64.tar.gz"
-      sha256 "194f5c34e200fe6b84c68929b6bad3a24cff0b950c81d75a7237e898b126897e"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.0/zipline_Linux_arm64.tar.gz"
+      sha256 "6082ff382b055ac677740e0a5f4f7bf8bd53c3bb4f8f99d5559982bde1332869"
 
       def install
         bin.install "zipline"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.3.4/zipline_0.3.4_Linux_x86_64.tar.gz"
-      sha256 "8a9957e0ced86f4e9f1f75b4500a50826644770487e29fd8d2cedbb67b63abc2"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.0/zipline_Linux_x86_64.tar.gz"
+      sha256 "407406becc373e0da99dafc976603f732872002f0d091e72c38d60fb4930cb20"
 
       def install
         bin.install "zipline"
