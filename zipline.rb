@@ -5,20 +5,20 @@
 class Zipline < Formula
   desc ""
   homepage ""
-  version "0.4.3"
+  version "0.4.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.3/zipline_Darwin_arm64.tar.gz"
-      sha256 "01c104f9b3e2f97229f99e115a25eb8c2a7e21f3b472bfd505d885cf2c89d75a"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.4/zipline_Darwin_arm64.tar.gz"
+      sha256 "ab582ff0f6c3ea7fee19d982fcb68b803784a4030f82db4f156c664a12f2e84c"
 
       def install
         bin.install "zipline"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.3/zipline_Darwin_x86_64.tar.gz"
-      sha256 "2b0e54e06913eaea6606e4dbd74165674c88ca9cf7db95b58ed5f75134deab62"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.4/zipline_Darwin_x86_64.tar.gz"
+      sha256 "0df765df69a93252ff3a98db8fed66fecf3d3ea8b452064fdc07b615daaad97b"
 
       def install
         bin.install "zipline"
@@ -28,16 +28,16 @@ class Zipline < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.3/zipline_Linux_arm64.tar.gz"
-      sha256 "8ab6213a69a5e79573cc07213d70499b06d8d1666c3970ff2063896c0597dfdf"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.4/zipline_Linux_arm64.tar.gz"
+      sha256 "644cf85300b0a294a60575519439ee38a6567efe351ce1e587ca7de1e4705a10"
 
       def install
         bin.install "zipline"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.3/zipline_Linux_x86_64.tar.gz"
-      sha256 "e2cd346f2b05cc38672a9a5a72fb71fedf3cd19c95cf179ea1f1e7610d8ed1f0"
+      url "https://github.com/bilal-bhatti/zipline/releases/download/v0.4.4/zipline_Linux_x86_64.tar.gz"
+      sha256 "7b503d059a12083c9340109e42fbfcf27f418588b06207f4e17f63752315c423"
 
       def install
         bin.install "zipline"
