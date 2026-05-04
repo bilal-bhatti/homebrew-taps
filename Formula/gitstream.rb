@@ -1,20 +1,20 @@
 class Gitstream < Formula
   desc "Real-time git diff watcher — scrolling diffs ordered by file mtime"
   homepage "https://github.com/bilal-bhatti/gitstream"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/gitstream/releases/download/0.1.1/gitstream-aarch64-apple-darwin.tar.xz"
-      sha256 "1441b4f3cddc132b96899fa9b6d1b7db94cc6d452bc15e05d05fe4883d7ecc01"
+      url "https://github.com/bilal-bhatti/gitstream/releases/download/v0.1.2/gitstream-aarch64-apple-darwin.tar.xz"
+      sha256 "702de72278c8875e5f4d346fa8d0cf2bb258773cba89eaa29b0aa8482d01bc1c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/gitstream/releases/download/0.1.1/gitstream-x86_64-apple-darwin.tar.xz"
-      sha256 "5878bdbcb7d6b643babd0176c014f681d4686a7b09dca61d62c4ad2e15ee7541"
+      url "https://github.com/bilal-bhatti/gitstream/releases/download/v0.1.2/gitstream-x86_64-apple-darwin.tar.xz"
+      sha256 "dd7ea184bc028eff5c2aad7a427a2286f06e659dd499608243ceb07adbd04c01"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/bilal-bhatti/gitstream/releases/download/0.1.1/gitstream-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "f749e55e22332ab87bc343812feef11f26e862b5054328201d45f16bf58bd2d4"
+    url "https://github.com/bilal-bhatti/gitstream/releases/download/v0.1.2/gitstream-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "3ed953562a0f230ebb67c84c6363536e0550d47649ecc048b7b3d71e1027b2b3"
   end
   license "MIT"
 
