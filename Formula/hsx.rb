@@ -1,20 +1,20 @@
 class Hsx < Formula
   desc "Portable cross-shell history substring search (zsh-history-substring-search, but for zsh/bash/dash/ksh)"
   homepage "https://github.com/bilal-bhatti/hsx"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/hsx/releases/download/v0.1.1/hsx-aarch64-apple-darwin.tar.xz"
-      sha256 "41ee609695cd0ffcafab4a9e2e89390c66cccbd49499a06902a17787bb76b72c"
+      url "https://github.com/bilal-bhatti/hsx/releases/download/v0.1.2/hsx-aarch64-apple-darwin.tar.xz"
+      sha256 "bb5f56bfb5e0085324a2f4aef790e8f86ee23cffd0afb47509d31780743006f0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/hsx/releases/download/v0.1.1/hsx-x86_64-apple-darwin.tar.xz"
-      sha256 "a2ef449469d7a6c6323bb14d5f82397cb6f9aa7f63a80992445ef240667a778e"
+      url "https://github.com/bilal-bhatti/hsx/releases/download/v0.1.2/hsx-x86_64-apple-darwin.tar.xz"
+      sha256 "8b1ae6b6045424228a1e3798437fdc6d3881946336816efa78b0e08c0526dd29"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/bilal-bhatti/hsx/releases/download/v0.1.1/hsx-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "b082ba4445319b602c483c654f03c04e1aff71881b840bacddb908c40f931b4c"
+    url "https://github.com/bilal-bhatti/hsx/releases/download/v0.1.2/hsx-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "2b2f0b30782a17d5b5100be5b2067375eaae21d164c7aad90cb9da67e7b8de4c"
   end
   license "MIT"
 
@@ -40,9 +40,15 @@ class Hsx < Formula
   end
 
   def install
-    bin.install "hsx" if OS.mac? && Hardware::CPU.arm?
-    bin.install "hsx" if OS.mac? && Hardware::CPU.intel?
-    bin.install "hsx" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "hsx"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "hsx"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "hsx"
+    end
 
     install_binary_aliases!
 
