@@ -1,20 +1,20 @@
 class Pga < Formula
   desc "Terminal UI for PostgreSQL roles, databases and privileges"
   homepage "https://github.com/bilal-bhatti/pga"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bilal-bhatti/pga/releases/download/v0.1.2/pga-aarch64-apple-darwin.tar.xz"
-      sha256 "4df63437f682dbb4ace6b81577f4269c027fa8fcbd8534725316776dbd129ee3"
+      url "https://github.com/bilal-bhatti/pga/releases/download/v0.1.3/pga-aarch64-apple-darwin.tar.xz"
+      sha256 "d6197010fdc5703bf0cf968c40bf898df6b761c036bfdcc32c3b66e2b28cadb7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bilal-bhatti/pga/releases/download/v0.1.2/pga-x86_64-apple-darwin.tar.xz"
-      sha256 "f8486f698a2de1002cfc80180877beb711b1f0ba6440d2b194c82592d183d32d"
+      url "https://github.com/bilal-bhatti/pga/releases/download/v0.1.3/pga-x86_64-apple-darwin.tar.xz"
+      sha256 "c94ad65717edc51dfd6b4a6647b27b17cf418606ab47920a517df07abecaaefe"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/bilal-bhatti/pga/releases/download/v0.1.2/pga-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "fb9fdec7df8f460591828c2785be155c537ed5597c3bdd30618f9068b6f4ba93"
+    url "https://github.com/bilal-bhatti/pga/releases/download/v0.1.3/pga-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "c1748e99f6120254cf79b521a6328cb84098e9f090253e831ddf65d1929b908c"
   end
   license "MIT"
 
